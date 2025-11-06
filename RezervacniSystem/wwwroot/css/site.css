@@ -1,0 +1,126 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.navbar {
+    background-color: transparent !important;
+    color:aliceblue !important;
+}
+.navbar li {
+    margin-left: 40px;
+    font-weight: 650;
+    font-size: 1.2rem;
+    letter-spacing: 0.7px;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.branding, nav {
+    position: relative;
+    z-index: 10;
+    background-color: transparent !important;
+}
+.branding {
+    display: flex;
+    justify-content: center;
+    filter: brightness(0) invert(1);
+}
+.branding img {
+    object-fit: contain;
+    width: 27%;
+    height: auto;
+    background-color: transparent;
+}
+    .branding a {
+        display: flex;
+        justify-content: center;
+    }
+
+main {
+    position: absolute;
+    bottom: 0; 
+    top: 0;
+    left: 0;
+    right:0;
+    z-index:0;
+}
+.background img{
+    width: 100%;
+}
+
+.hero-section {
+    
+    width: 100%;
+    overflow: hidden;
+}
+.hero-mainpage {
+    height: 100vh;
+}
+.hero-subpage {
+    height: 65vh;
+}
+.hero-section .background img {
+    object-fit: cover;
+    object-position: center;
+}
+.room-section img{
+    width: 300px;
+    height: 300px;
+}
+.room-section {
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    padding-top: 10px;
+}
+
+@media (max-width: 1200px) {
+    .hero-mainpage {
+        height: 60vh;
+    }
+    .navbar li {
+        margin-left: 20px;
+        letter-spacing: 0.5px;
+    }
+    .navbar a {
+        background-color: white !important;
+        color: black !important;
+        padding: 10px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        height: 28vh;
+    }
+    .branding {
+        display: none;
+    }
+
+    .navbar-collapse {
+        background-color: white !important;
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
