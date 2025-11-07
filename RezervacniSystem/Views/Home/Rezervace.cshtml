@@ -1,5 +1,58 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model HotelRezervacniSystem.Models.Reservation
 @{
+    ViewData["Title"] = "Home Page";
 }
+<section class="hero-section hero-subpage">
+    <div class="background">
+        <img src="~/Images/Reservation.jpg" alt="Hotel Aurelia">
+    </div>
+</section>
+<section class="reservation-section container py-5">
+    <h2 class="text-center mb-4">Rezervace pokoje</h2>
+    <div class="reservation-card mx-auto">
+        <form method="post">
+            @Html.ValidationSummary(true)
+            <div class="form-group mb-3">
+                <label>Jméno hosta:</label>
+                <input name="GuestName"/>
+                @Html.ValidationMessageFor(m => m.GuestName, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-3">
+                <label>Datum příjezdu:</label>
+                <input type="date" name="CheckInDate"/>
+                @Html.ValidationMessageFor(m => m.CheckInDate, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-3">
+                <label>Datum odjezdu:</label>
+                <input type="date" name="CheckOutDate"/>
+                @Html.ValidationMessageFor(m => m.CheckOutDate, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group mb-3">
+                <label>Typ pokoje:</label>
+                <select name="Beds">
+                    <option value="2">Dvoulůžkový pokoj</option>
+                    <option value="4">Čtyřlůžkový pokoj</option>
+                </select>
+                @Html.ValidationMessageFor(m => m.Beds)
+            </div>
+
+            <button type="submit" class="btn btn-reservation">Odeslat rezervaci</button>
+        </form>
+        <div class="text-center mt-4">
+            <a asp-controller="Home" asp-action="SeznamRezervaci" class="btn btn-outline-secondary me-2">
+                Zobrazit všechny rezervace
+            </a>
+
+            <a asp-controller="Home" asp-action="Pokoje" class="btn btn-outline-secondary">
+                Zobrazit pokoje
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+

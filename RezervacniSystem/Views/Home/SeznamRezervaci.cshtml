@@ -1,0 +1,41 @@
+﻿@model List<HotelRezervacniSystem.Models.Reservation>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<section class="hero-section hero-subpage">
+    <div class="background">
+        <img src="~/Images/Reservation.jpg" alt="Hotel Aurelia">
+    </div>
+</section>
+<section class="content-section">
+    <div class="container py-5 text-center">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Jméno</th>
+                    <th>CheckIn</th>
+                    <th>CheckOut</th>
+                    <th>Číslo pokoje</th>
+                    <th>Editace</th>
+                </tr>
+            </thead>
+            <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.GuestName</td>
+                <td>@reservation.CheckInDate.ToShortDateString()</td>
+                <td>@reservation.CheckOutDate.ToShortDateString()</td>
+                <td>@reservation.RoomNumber</td>
+                <td>
+                        <form method="post" asp-action="DeleteReservation" asp-controller="Home" asp-route-id="@reservation.Id">
+                        <button type="submit">Smazat</button>
+                    </form>
+                </td>
+            </tr>
+        }
+            </tbody>
+
+        </table>
+    </div>
+</section>

@@ -5,31 +5,38 @@
     <div class="background">
         <img src="~/Images/Hotel.jpg" alt="Hotel Aurelia">
     </div>
+
     </section>
     <section class="content-section">
         <div class="container py-5 text-center">
             <img src="~/Images/Logo.png" width="40%">
             <h2>Vítejte v Hotelu Aurelia</h2>
-            <p>Hotel Aurelia leží jen pár minut od sjezdovky. Random textHotel Aurelia leží jen pár minut od sjezdovky. Random textHotel Aurelia leží jen pár minut od sjezdovky. Random textHotel Aurelia leží jen pár minut od sjezdovky. Random textHotel Aurelia leží jen pár minut od sjezdovky. Random text</p>
+        <p>V srdci zasněžených hor se nachází Hotel Aurelia. Místo, kde se elegance snoubí s klidem horské přírody.<br /> Užijte si pobyt jen pár kroků od sjezdovek, zamrzlých jezer, vyhřáté wellness a výhledy na které nezapomenete.</p>
         </div>
     </section>
-<section class="room-section">
+<section class="room-section text-center">
         <div class="row">
             <div class="col">
-                <img src="~/Images/Hotel.jpg"/>
-                <p>Tady bude nějaký text s názvem pokoje</p>
+                <div class="room-card">
+                    <img src="~/Images/RoomDouble.jpg"/>
+                    <h4>Dvoulůžkový pokoj Standart</h4>
+                </div>
             </div>
             <div class="col">
-                <img src="~/Images/Hotel.jpg"/>
-                <p>Tady bude nějaký text s názvem pokoje</p>
+                <div class="room-card">
+                    <img src="~/Images/RoomFamily.jpg"/>
+                    <h4>Rodinný čtyřlůžkový pokoj</h4>
+                </div>
             </div>
             <div class="col">
-                <img src="~/Images/Hotel.jpg"/>
-                <p>Tady bude nějaký text s názvem pokoje</p>
+                <div class="room-card">
+                    <img src="~/Images/RoomPremium.jpg"/>
+                    <h4>Horský apartmán</h4>
+                </div>
             </div>
         </div>
-        <div class="text-center">
-            <a>Zobrazit pokoje</a>
+        <div>
+        <a asp-controller="Home" asp-action="Pokoje" class="btn-rooms">Zobrazit pokoje</a>
         </div>
 </section>
 

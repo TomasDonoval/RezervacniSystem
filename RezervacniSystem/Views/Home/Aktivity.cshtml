@@ -1,14 +1,49 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Aktivity";
 }
+
 <section class="hero-section hero-subpage">
     <div class="background">
-        <img src="~/Images/Activities.jpg" alt="Hotel Aurelia">
+        <img src="~/Images/Activities.jpg" alt="Aktivity v Hotelu Aurelia">
     </div>
 </section>
-<section class="content-section">
-    <div class="container py-5 text-center">
-        <h2>Vítejte v Hotelu Aurelia</h2>
-        <p>Tady něco bude — například popis hotelu, služby nebo rezervace.</p>
+
+
+<section class="activities-section container py-5">
+
+    <h2 class="text-center mb-5">Zimní aktivity</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="activity-card">
+                <img src="~/Images/ActivitiesSkiing.jpg" class="activity-img" />
+                <div class="activity-content">
+                    <h3>Lyžování</h3>
+                    <p>Pár minut od hotelu najdete upravené sjezdovky všech obtížností. Ideální pro rodiny, začátečníky i zkušené lyžaře.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="activity-card">
+                <img src="~/Images/IceSkating.jpg" class="activity-img" />
+                <div class="activity-content">
+                    <h3>Bruslení</h3>
+                    <p>Nedaleko hotelu v zimě zamrzá jezero, které slouží jako přírodní kluziště. Perfektní pro romantické bruslení pod širým nebem.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="activity-card">
+                <img src="~/Images/Viewpoint.jpg" class="activity-img" />
+                <div class="activity-content">
+                    <h3>Horská vyhlídka</h3>
+                    <p>Jen 10 minut chůze od hotelu se nachází vyhlídka s nádherným panoramatem horského údolí. Ideální na fotografie.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>

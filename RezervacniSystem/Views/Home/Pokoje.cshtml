@@ -1,14 +1,51 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Pokoje";
 }
 <section class="hero-section hero-subpage">
     <div class="background">
         <img src="~/Images/HotelRoom.jpg" alt="Hotel Aurelia">
     </div>
 </section>
-<section class="content-section">
-    <div class="container py-5 text-center">
-        <h2>Pokoje v hotelu Aurelia</h2>
-        <p>Tady něco bude — například popis hotelu, služby nebo rezervace.</p>
+<section class="rooms-list container py-5">
+    <h2 class="text-center mb-5">Naše pokoje</h2>
+
+    <div class="row g-4">
+
+        <!-- Dvoulůžkový pokoj -->
+        <div class="col-md-4">
+            <div class="room-card">
+                <img src="~/Images/RoomDouble.jpg" class="room-img" />
+                <div class="room-content">
+                    <h3>Dvoulůžkový pokoj</h3>
+                    <p>Útulný pokoj ideální pro páry, s výhledem na hory a moderním vybavením.</p>
+                    <span class="price">od 1 900 Kč / noc</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Čtyřlůžkový -->
+        <div class="col-md-4">
+            <div class="room-card">
+                <img src="~/Images/RoomFamily.jpg" class="room-img" />
+                <div class="room-content">
+                    <h3>Rodinný pokoj</h3>
+                    <p>Prostorný pokoj vhodný pro rodiny s dětmi, s oddělenou ložnicí.</p>
+                    <span class="price">od 2 900 Kč / noc</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Apartmán -->
+        <div class="col-md-4">
+            <div class="room-card">
+                <img src="~/Images/RoomPremium.jpg" class="room-img" />
+                <div class="room-content">
+                    <h3>Apartmán Premium</h3>
+                    <p>Luxusní apartmán s vlastním obývákem, kuchyňkou a balkonem.</p>
+                    <span class="price">od 4 500 Kč / noc</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
