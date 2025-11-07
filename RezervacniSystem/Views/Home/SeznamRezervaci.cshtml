@@ -22,14 +22,14 @@
             <tbody>
         @foreach (var reservation in Model)
         {
-            <tr>
+            <tr class="reservation-row">
                 <td>@reservation.GuestName</td>
                 <td>@reservation.CheckInDate.ToShortDateString()</td>
                 <td>@reservation.CheckOutDate.ToShortDateString()</td>
                 <td>@reservation.RoomNumber</td>
                 <td>
                         <form method="post" asp-action="DeleteReservation" asp-controller="Home" asp-route-id="@reservation.Id">
-                        <button type="submit">Smazat</button>
+                        <button type="submit" class="btn-delete btn-danger">Smazat</button>
                     </form>
                 </td>
             </tr>

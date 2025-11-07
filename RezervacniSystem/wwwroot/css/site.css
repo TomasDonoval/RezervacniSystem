@@ -159,10 +159,10 @@ body {
     transition: 0.3s ease;
 }
 
-    .activity-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.18);
-    }
+.activity-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+}
 
 .activity-img {
     width: 100%;
@@ -212,6 +212,14 @@ body {
     padding: 10px;
     width: 100%;
     margin-bottom: 15px;
+}
+.btn-delete {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 6px 14px;
+}
+.reservation-row:hover {
+    background-color: #f0f0f0;
 }
 
 
