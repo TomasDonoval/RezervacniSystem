@@ -44,7 +44,8 @@ Stránky obsahují:
 <summary>Úvodní stránka</summary>
 Hlavní prezentace hotelu s hlavním obrázkem a jednoduchou navigací.
 <img width="1899" height="942" src="https://github.com/user-attachments/assets/3dd96bb4-53d8-479b-83a8-358a41071126" />
-<img width="1903" height="922" src="https://github.com/user-attachments/assets/c1bf42da-6d09-4ea7-860a-e817f688a99c" />
+<img width="1904" height="887" src="https://github.com/user-attachments/assets/003998c4-22a8-40a1-adbc-1793d821cc02" />
+
 </details>
 
 <details>
