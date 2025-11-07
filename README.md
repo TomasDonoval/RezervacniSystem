@@ -42,32 +42,32 @@ Stránky obsahují:
 ## Screenshoty
 <details>
 <summary>Úvodní stránka</summary>
-> Hlavní prezentace hotelu s hlavním obrázkem a jednoduchou navigací.
+Hlavní prezentace hotelu s hlavním obrázkem a jednoduchou navigací.
 <img width="1899" height="942" src="https://github.com/user-attachments/assets/3dd96bb4-53d8-479b-83a8-358a41071126" />
 <img width="1903" height="922" src="https://github.com/user-attachments/assets/c1bf42da-6d09-4ea7-860a-e817f688a99c" />
 </details>
 
 <details>
 <summary>Aktivity</summary>
-> Přehled aktivit dostupných hotelovým hostům, jako je lyžování, wellness nebo bruslení.
+Přehled aktivit dostupných hotelovým hostům, jako je lyžování, wellness nebo bruslení.
 <img width="1895" height="1069" src="https://github.com/user-attachments/assets/5b5ddb3c-d013-4559-ad86-d568e23ad255" />
 </details>
 
 <details>
 <summary>Kontakt</summary>
-> Kontaktní stránka s adresou, mapou a telefonním spojením na recepci.
+Kontaktní stránka s adresou, mapou a telefonním spojením na recepci.
 <img width="1895" height="946" src="https://github.com/user-attachments/assets/c1d1b2a3-0511-4611-a241-49de56277d42" />
 </details>
 
 <details>
 <summary>Rezervační formulář</summary>
-> Formulář, kde návštěvník vyplní jméno, datum pobytu a typ pokoje. Probíhá validace i kontrola dostupnosti.
+Formulář, kde návštěvník vyplní jméno, datum pobytu a typ pokoje. Probíhá validace i kontrola dostupnosti.
 <img width="699" height="714" src="https://github.com/user-attachments/assets/f196e30a-0005-4880-bfe9-df0866358757" />
 </details>
 
 <details>
 <summary>Seznam rezervací</summary>
-> Administrační přehled všech proběhlých rezervací s možností jejich mazání.
+Administrační přehled všech proběhlých rezervací s možností jejich mazání.
 <img width="1900" height="909" src="https://github.com/user-attachments/assets/964b0827-997e-412f-b7dd-bbd5030e6065" />
 </details>
 
