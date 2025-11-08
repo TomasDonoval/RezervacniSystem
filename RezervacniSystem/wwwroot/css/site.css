@@ -64,7 +64,7 @@ body {
     height: 100vh;
 }
 .hero-subpage {
-    aspect-ratio: 16 / 7;
+    aspect-ratio: 16 / 5;
     height: auto;
 }
 .hero-section .background img {
@@ -250,7 +250,10 @@ body {
         height: 100%;
         border: 0;
     }
-
+.wellness-section{
+    width: 90%;
+    margin: 10px auto 0 auto;
+}
 
 @media (max-width: 1200px) {
     .hero-mainpage {
@@ -321,4 +324,5 @@ body {
         color: black !important;
     }
 }
+
 
