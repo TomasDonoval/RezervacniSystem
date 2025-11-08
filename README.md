@@ -68,7 +68,7 @@ Formulář, kde návštěvník vyplní jméno, datum pobytu a typ pokoje. Probí
 
 <details>
 <summary>Seznam rezervací</summary>
-Administrační přehled všech proběhlých rezervací s možností jejich mazání.
+Přehled všech proběhlých rezervací s možností jejich mazání.
 <img width="1900" height="909" src="https://github.com/user-attachments/assets/964b0827-997e-412f-b7dd-bbd5030e6065" />
 </details>
 
