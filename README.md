@@ -63,7 +63,7 @@ Stránky obsahují:
 <details>
 <summary>Rezervační formulář</summary>
 - Formulář, kde návštěvník vyplní jméno, datum pobytu a typ pokoje. Probíhá validace i kontrola dostupnosti.
-<img width="1901" height="947" src="https://github.com/user-attachments/assets/694a4b1a-a3d7-4993-bd45-bf9c02c1730f" />
+<img width="651" height="683" src="https://github.com/user-attachments/assets/5c03af58-ca50-4531-b4e1-c1c988330d67" />
 </details>
 
 <details>
