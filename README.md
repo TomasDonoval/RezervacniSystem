@@ -56,8 +56,8 @@ Stránky obsahují:
 
 <details>
 <summary>Aktivity</summary>
-- Přehled aktivit dostupných hotelovým hostům, jako je lyžování, wellness nebo bruslení.
-<img width="1895" height="1069" src="https://github.com/user-attachments/assets/5b5ddb3c-d013-4559-ad86-d568e23ad255" />
+- Příklad jedné z vedlejších stránek.
+<img width="1904" height="942" alt="{E670742F-0785-4944-A337-40193533F81F}" src="https://github.com/user-attachments/assets/737afd7b-88e2-4476-945a-c7ee7972de83" />
 </details>
 
 <details>
