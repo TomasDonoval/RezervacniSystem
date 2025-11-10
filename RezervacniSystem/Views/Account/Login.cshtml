@@ -19,11 +19,11 @@
             <label for="password">Heslo:</label>
             <input asp-for="Password" type="password" />
             <span asp-validation-for="Password" class="text-danger"></span>
-
-            <label for="rememberMe">Zapamatovat si mě</label>
-            <input asp-for="RememberMe" type="checkbox" />
+            <div class="remember-me-row">
+                <input asp-for="RememberMe" type="checkbox" />
+                <label for="rememberMe">Zapamatovat si mě</label>
+            </div>
                 
-
             <button type="submit" class="btn btn-form-submit mt-3">Přihlásit se</button>
         </form>
     </div>
