@@ -18,6 +18,26 @@ namespace HotelRezervacniSystem.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            ModelState.AddModelError(string.Empty, "Neplatný pokus o přihlášení.");
+            return View(model);
+        }
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
@@ -37,6 +57,12 @@ namespace HotelRezervacniSystem.Controllers
                 ModelState.AddModelError(string.Empty, error.Description);
             }
             return View(model);
+        }
+         [HttpPost]
+         public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

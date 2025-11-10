@@ -1,6 +1,6 @@
-﻿@model HotelRezervacniSystem.Models.Account.RegisterViewModel
+﻿@model HotelRezervacniSystem.Models.Account.LoginViewModel
 @{
-    ViewData["Title"] = "Registrace";
+    ViewData["Title"] = "Přihlášení";
 }
 <section class="hero-section hero-subpage">
     <div class="background">
@@ -8,10 +8,10 @@
     </div>
 </section>
 <section class="form-section container py-2">
-    <h2 class="text-center mb-4">Vytvoření účtu</h2>
+    <h2 class="text-center mb-4">Přihlášení</h2>
     <div class="form-card mx-auto">
         <div asp-validation-summary="All" class="text-danger mb-3"></div>
-        <form asp-action="Register" asp-controller="Account" method="post">
+        <form asp-action="Login" asp-controller="Account" method="post">
             <label for="email">Email:</label>
             <input asp-for="Email" type="email" />
             <span asp-validation-for="Email" class="text-danger"></span>
@@ -20,11 +20,7 @@
             <input asp-for="Password" type="password" />
             <span asp-validation-for="Password" class="text-danger"></span>
 
-            <label for="confirmPassword">Potvrzení hesla:</label>
-            <input asp-for="ConfirmPassword" type="password" />
-            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-
-            <button type="submit" class="btn btn-form-submit mt-3">Registrovat se</button>
+            <button type="submit" class="btn btn-form-submit mt-3">Přihlásit se</button>
         </form>
     </div>
 </section>

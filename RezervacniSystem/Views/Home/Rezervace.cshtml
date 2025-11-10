@@ -7,9 +7,9 @@
         <img src="~/Images/Reservation.jpg" alt="Hotel Aurelia">
     </div>
 </section>
-<section class="reservation-section container py-2">
+<section class="form-section container py-2">
     <h2 class="text-center mb-4">Rezervace pokoje</h2>
-    <div class="reservation-card mx-auto">
+    <div class="form-card mx-auto">
         <form method="post">
             @Html.ValidationSummary(true)
             <div class="form-group mb-3">
@@ -39,7 +39,7 @@
                 @Html.ValidationMessageFor(m => m.Beds)
             </div>
 
-            <button type="submit" class="btn btn-reservation">Odeslat rezervaci</button>
+            <button type="submit" class="btn btn-form-submit">Odeslat rezervaci</button>
         </form>
         <div class="text-center mt-4">
             <a asp-controller="Home" asp-action="SeznamRezervaci" class="btn btn-outline-secondary me-2 my-2">
