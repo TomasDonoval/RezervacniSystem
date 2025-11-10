@@ -49,8 +49,8 @@ Stránky obsahují:
 <details>
 <summary>Úvodní stránka</summary>
 - Hlavní prezentace hotelu s hero obrázkem a jednoduchou navigací.
-<img width="1899" height="942" src="https://github.com/user-attachments/assets/3dd96bb4-53d8-479b-83a8-358a41071126" />
-<img width="1904" height="887" src="https://github.com/user-attachments/assets/003998c4-22a8-40a1-adbc-1793d821cc02" />
+<img width="1899" height="944" src="https://github.com/user-attachments/assets/b25b4cc2-0794-4c18-8ae8-35c1d2364b32" />
+<img width="1905" height="792" src="https://github.com/user-attachments/assets/3e2aae93-9f7d-43c8-b56d-42e2fea4aba7" />
 
 </details>
 
@@ -61,15 +61,9 @@ Stránky obsahují:
 </details>
 
 <details>
-<summary>Kontakt</summary>
-- Kontaktní stránka s adresou, mapou a telefonním spojením na recepci.
-<img width="1895" height="946" src="https://github.com/user-attachments/assets/c1d1b2a3-0511-4611-a241-49de56277d42" />
-</details>
-
-<details>
 <summary>Rezervační formulář</summary>
 - Formulář, kde návštěvník vyplní jméno, datum pobytu a typ pokoje. Probíhá validace i kontrola dostupnosti.
-<img width="699" height="714" src="https://github.com/user-attachments/assets/f196e30a-0005-4880-bfe9-df0866358757" />
+<img width="1901" height="947" src="https://github.com/user-attachments/assets/694a4b1a-a3d7-4993-bd45-bf9c02c1730f" />
 </details>
 
 <details>
@@ -77,6 +71,13 @@ Stránky obsahují:
 Přehled všech proběhlých rezervací s možností jejich mazání.
 <img width="1900" height="909" src="https://github.com/user-attachments/assets/964b0827-997e-412f-b7dd-bbd5030e6065" />
 </details>
+
+<details>
+<summary>Registrační a přihlašovací formulář</summary>
+<img width="677" height="489" alt="{A40AC65D-4B65-4FE5-B407-A4F5CDF7E89B}" src="https://github.com/user-attachments/assets/7906a6e3-554a-4855-9efe-f86be38d1fae" />
+<img width="640" height="424" src="https://github.com/user-attachments/assets/8289c11b-c828-4cfb-a90d-2449579e9c76" />
+</details>
+
 
 ## Použité technologie
 
