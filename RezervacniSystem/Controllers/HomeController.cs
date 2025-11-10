@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using RezervacniSystem.Models;
 using HotelRezervacniSystem.Services;
 using Microsoft.VisualBasic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RezervacniSystem.Controllers
 {
@@ -84,6 +85,7 @@ namespace RezervacniSystem.Controllers
             return RedirectToAction("Index");
             
         }
+        [Authorize]
         [HttpPost]
         public IActionResult DeleteReservation(int id)
         {

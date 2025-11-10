@@ -16,7 +16,10 @@
                     <th>CheckIn</th>
                     <th>CheckOut</th>
                     <th>Číslo pokoje</th>
-                    <th>Editace</th>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <th>Editace</th>
+                    }
                 </tr>
             </thead>
             <tbody>
@@ -27,11 +30,16 @@
                 <td>@reservation.CheckInDate.ToShortDateString()</td>
                 <td>@reservation.CheckOutDate.ToShortDateString()</td>
                 <td>@reservation.RoomNumber</td>
-                <td>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <td>
                         <form method="post" asp-action="DeleteReservation" asp-controller="Home" asp-route-id="@reservation.Id">
-                        <button type="submit" class="btn-delete btn-danger">Smazat</button>
-                    </form>
-                </td>
+                            <button type="submit" class="btn-delete btn-danger">Smazat</button>
+                        </form>
+                    </td>
+                }                  
+                
             </tr>
         }
             </tbody>
