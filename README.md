@@ -32,7 +32,8 @@ Tato aplikace byla vytvořena jako součást mého portfolia. Ukazuje práci s A
 ### 4. Přihlášení uživatelů
 - registrace nových uživatelů
 - přihlášení pomocí emailu a hesla
-
+- správa uživatelů přes ASP.NET Core Identity
+  
 ---
 
 ### 5. Moderní webová prezentace hotelu
