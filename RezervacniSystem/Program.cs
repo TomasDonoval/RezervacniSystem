@@ -16,6 +16,16 @@ builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
 builder.Services.AddScoped<ReservationService>();
 
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+    options.ExpireTimeSpan = TimeSpan.FromDays(30);
+    options.SlidingExpiration = true;
+    options.Cookie.Name = "HotelAurelia.Auth";
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
