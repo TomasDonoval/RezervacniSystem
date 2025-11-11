@@ -5,17 +5,17 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-COPY RezervacniSystem/RezervacniSystem.csproj RezervacniSystem/
+COPY RezervacniSystem/RezervacniSystem/RezervacniSystem.csproj RezervacniSystem/
 
 RUN dotnet restore RezervacniSystem/RezervacniSystem.csproj
 
 COPY . .
 
-WORKDIR /src/RezervacniSystem
+WORKDIR /src/RezervacniSystem/RezervacniSystem
 RUN dotnet build -c Release -o /app/build
 
 FROM build AS publish
-WORKDIR /src/RezervacniSystem
+WORKDIR /src/RezervacniSystem/RezervacniSystem
 RUN dotnet publish -c Release -o /app/publish
 
 FROM base AS final
