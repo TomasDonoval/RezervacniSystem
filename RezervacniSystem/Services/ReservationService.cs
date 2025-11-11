@@ -1,5 +1,4 @@
-﻿using HotelRezervacniSystem.Migrations;
-using HotelRezervacniSystem.Models;
+﻿using HotelRezervacniSystem.Models;
 
 namespace HotelRezervacniSystem.Services
 {
