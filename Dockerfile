@@ -5,20 +5,19 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-COPY RezervacniSystem/RezervacniSystem/RezervacniSystem.csproj RezervacniSystem/
+COPY RezervacniSystem/HotelRezervacniSystem.csproj RezervacniSystem/
 
-RUN dotnet restore RezervacniSystem/RezervacniSystem.csproj
+RUN dotnet restore RezervacniSystem/HotelRezervacniSystem.csproj
 
 COPY . .
 
-WORKDIR /src/RezervacniSystem/RezervacniSystem
+WORKDIR /src/RezervacniSystem
 RUN dotnet build -c Release -o /app/build
 
 FROM build AS publish
-WORKDIR /src/RezervacniSystem/RezervacniSystem
 RUN dotnet publish -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "RezervacniSystem.dll"]
+ENTRYPOINT ["dotnet", "HotelRezervacniSystem.dll"]
