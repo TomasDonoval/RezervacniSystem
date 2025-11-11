@@ -381,7 +381,13 @@ body {
     .room-section .row {
         flex-direction: column !important;
     }
-}
+    .hero-subpage {
+        height: auto;
+    }
+    .margin-bottom {
+        margin-bottom: 7px;
+    }
+    }
 @media (max-width: 1000px) {
 
     .nav-center {
